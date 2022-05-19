@@ -1,0 +1,138 @@
+.box{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: #27ae60;
+}
+
+.container{
+    position: relative;
+    max-width:430px;
+    width: 100%;
+    max-width: 430px;
+    background-color: #fff;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.container .forms{
+    align-items: center;
+    width:200%;
+}
+
+.container .form{
+    width:50%;
+    padding:30px;
+}
+
+.container .form .title{
+    position:relative;
+    font-size:27px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height:3px;
+    width:30px;
+    background-color:#27ae60;
+    border-radius:25px;
+}
+
+.form .input-field{
+    margin-top:30px;
+    position:relative;
+    height:50px;
+    width:100%;
+}
+
+.input-field input{
+    position:absolute;
+    height:100%;
+    width:100%;
+    font-size: 16px;
+    padding:0 35px;
+    border-bottom: 2px solid #ccc;
+}
+
+.input-field input:is(:focus,:valid){
+    border-bottom-color: #27ae60;
+}
+
+.input-field i{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size:23px;
+}
+
+.input-field input:is(:focus,:valid) ~ i{
+    color: #27ae60;
+}
+
+.input-field i.icon{
+    left:0;
+}
+
+.input-field i.showHidePw{
+    cursor:pointer;
+    padding:10px;
+    right:0;
+}
+
+.form .checkbox-text{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.checkbox-text .checkbox-content{
+    display:flex;
+    align-items:center;
+}
+
+.checkbox-content input{
+    margin:0 8px -2px 4px;
+    accent-color: #27ae60;
+}
+
+.form a{
+    text-decoration:none;
+    color: #27ae60;
+}
+
+.form a:hover{
+    text-decoration:underline;
+}
+
+.form .button{
+    margin-top: 30px ;
+}
+
+.form .button input{
+    border:none;
+    font-size:17px;
+    font-weight: 500;
+    letter-spacing:1px;
+    color: #fff;
+    background-color: #27ae60;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form .button input:hover{
+    background-color:#27ae60;
+}
+
+.form .login-signup{
+    font-size: 16px;
+    margin-top: 30px;
+    text-align: center;
+}

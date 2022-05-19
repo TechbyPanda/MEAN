@@ -1,0 +1,91 @@
+.carousel-item img{
+    height:500px;
+}
+
+.card_col{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.card{
+    height:350px;
+    width: 230px;
+    background-color:white;
+    margin:auto;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5)
+  }
+  
+  .card:hover .img_box img{
+    transform:scale(1.1);
+  }
+  
+  .card img{
+    height:100%;
+    width:100%;
+    transition:all 0.5s ease;
+  }
+  
+  .card .img_box{
+    height:65%;
+    width: 100%;
+    position:relative;
+    overflow:hidden;
+  }
+  
+  .card .img_box .product_icons{
+    position:absolute;
+    left:0;
+    bottom:20px;
+    width:100%;
+    text-align:center;
+  }
+  
+  .product_icons a{
+    height:40px;
+    width: 40px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background-color: black;
+    text-decoration:none;
+    color: white;
+    margin: 0 2px;
+    transform: translateX(-100px) rotate(90deg);
+    transition: all 0.5s ease calc(0.1s);
+    opacity: 0;
+  }
+  
+  .card:hover .product_icons a{
+    transform: translateX(0) rotate(0);
+    opacity:1;
+   
+  }
+  
+  .product_icons i{
+    transition:transform 0.3s ease;
+  }
+  
+  a:hover i{
+    transform: rotate(360deg);
+  }
+  
+  .card .card_content{
+    padding:3px;
+    text-align:center;
+}
+
+.card .card_content h2{
+    margin:1px;
+}
+
+.card .card_content .color,
+.card .card_content .size{
+    margin-top:5px;
+}
+.card .card_content .color span{
+    height:15px;
+    width: 15px;
+    border-radius:50%;
+    background-color:red;
+    display:inline-block;
+}

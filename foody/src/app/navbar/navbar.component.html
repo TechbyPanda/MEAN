@@ -1,0 +1,24 @@
+<header>
+    <a href="" class="logo"><i class="fa-solid fa-shoe-prints"></i>Simple Steps</a>
+
+<nav  class="navbar" [style.top]="menu ? '6%' : ''">
+    <a routerLink="home" routerLinkActive="active" *ngIf="!isLoggedIn()">HOME</a>
+    <a routerLinkActive="active" *ngIf="!isLoggedIn()">CONTACT US</a>
+    <a routerLinkActive="active" *ngIf="!isLoggedIn()">ABOUT</a>
+    <a routerLink="/signin" routerLinkActive="active" *ngIf="!isLoggedIn()">SIGNIN</a>
+    <a routerLink="/signup"routerLinkActive="active" *ngIf="!isLoggedIn()">SIGNUP</a>
+    <a routerLink="/admin-homepage"routerLinkActive="active" *ngIf="isLoggedIn()">HOME</a>
+    <a routerLink="/add-category"routerLinkActive="active" *ngIf="isLoggedIn()">ADD CATEGORY</a>
+    <a routerLink="/add-product"routerLinkActive="active" *ngIf="isLoggedIn()">ADD PRODUCT</a>
+</nav>
+
+<div class="icons">
+    <i class="fas fa-bars" id="menu-bars" (click)="show()" [ngClass]="menu ? 'fas fa-times' : ''"></i>
+    <i class="fas fa-search" id="search_icon"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fa-solid fa-right-from-bracket" *ngIf="isLoggedIn()" (click)="signOut()"></i>
+    <i class="fas fa-shopping-cart"></i>
+</div>
+
+</header>
+

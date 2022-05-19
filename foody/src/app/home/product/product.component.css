@@ -1,0 +1,22 @@
+.box{
+    width: 100%;
+    height: auto;
+}
+
+.box .container{
+    height:350px;
+    width: 250px;
+    border:1px solid black;
+    margin:30px
+}
+
+.imgBx img{
+    height:30%;
+    width: 90%;
+}
+
+.contentBx h2{
+    text-align:center;
+    height:50px
+    
+}
